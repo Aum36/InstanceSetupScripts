@@ -13,4 +13,7 @@ echo '[credential]
 [credential "https://dev.azure.com"]
 	useHttpPath = true' > ~/.gitconfig
 
+sudo apt install pass
 gpg --gen-key | sed -n '2 p' | sed 's/^[[:space:]]*//g' | xargs pass init
+cd ..
+sudo rm -rf installs
